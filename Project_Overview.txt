@@ -1,0 +1,61 @@
+
+PROJECT TITLE:
+Enterprise Agentic AI & Intelligent Automation Platform
+
+1. PROJECT OVERVIEW
+
+A web-based intelligent platform designed to automate
+enterprise operations using Artificial Intelligence,
+Machine Learning, Generative AI and workflow automation.
+
+2. PROBLEM STATEMENT
+
+Organizations spend considerable time processing
+business documents, handling employee requests,
+assigning tasks and managing repetitive operations.
+
+Manual processes create delays, increase workload
+and reduce operational efficiency.
+
+3. PROPOSED SOLUTION
+
+Develop an intelligent platform that analyses documents,
+answers user queries, predicts request categories,
+assigns tasks intelligently and automates business
+workflows with human approval.
+
+4. PROJECT OBJECTIVES
+
+- Automate repetitive business operations.
+- Analyse uploaded documents.
+- Provide an AI-powered chat assistant.
+- Predict request categories using Machine Learning.
+- Manage tasks using AI agents.
+- Automate business workflows.
+- Provide an administrative dashboard.
+
+5. TECHNOLOGY STACK
+
+Programming Language: Python
+Backend: FastAPI
+Frontend: React
+Database: PostgreSQL
+Machine Learning: Scikit-learn
+Generative AI: LLM
+Agentic AI: LangGraph
+Workflow Automation: n8n
+Testing: Pytest
+Deployment: Docker
+Version Control: Git and GitHub
+
+6. EXPECTED OUTCOME
+
+A functional enterprise automation platform
+with AI-powered document processing, intelligent
+task management and automated business workflows.
+
+7. PROJECT USERS
+
+- Employee
+- Manager
+- Administrator

@@ -1,0 +1,69 @@
+
+PROJECT: Enterprise Agentic AI & Intelligent Automation Platform
+
+1. FRONTEND LAYER
+Technology: React
+Purpose:
+- User dashboard
+- Login interface
+- Document upload
+- Request management
+- Analytics dashboard
+
+2. BACKEND LAYER
+Technology: Python FastAPI
+Purpose:
+- Handle API requests
+- Process business logic
+- Connect frontend and database
+- Manage authentication
+
+3. DATABASE LAYER
+Technology: PostgreSQL
+Purpose:
+- Store user details
+- Store documents metadata
+- Store business requests
+- Store task information
+- Maintain audit logs
+
+4. MACHINE LEARNING LAYER
+Technology: Python Scikit-learn
+Purpose:
+- Classify business requests
+- Predict request categories
+- Analyse request patterns
+
+5. GENERATIVE AI LAYER
+Technology: LLM and RAG
+Purpose:
+- Document question answering
+- AI chat assistant
+- Generate intelligent responses
+
+6. AGENTIC AI LAYER
+Technology: LangGraph
+Purpose:
+- Manage AI agents
+- Analyse tasks
+- Route requests
+- Coordinate workflows
+
+7. AUTOMATION LAYER
+Technology: n8n
+Purpose:
+- Automate repetitive tasks
+- Send notifications
+- Trigger workflows
+- Manage approval processes
+
+8. DEPLOYMENT LAYER
+Technology: Docker
+Purpose:
+- Package application
+- Manage application deployment
+- Support consistent environments
+
+EXPECTED RESULT:
+All layers communicate to create an intelligent
+enterprise automation platform.

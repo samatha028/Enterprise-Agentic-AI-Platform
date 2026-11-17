@@ -1,0 +1,41 @@
+
+APPLICATION WORKFLOW
+
+1. USER LOGIN
+Employee logs into the platform.
+
+2. REQUEST SUBMISSION
+Employee submits a business request
+or uploads a document.
+
+3. BACKEND PROCESSING
+FastAPI receives and validates the request.
+
+4. AI ANALYSIS
+Generative AI analyses document content
+and answers relevant questions.
+
+5. MACHINE LEARNING
+ML model predicts the request category.
+
+6. AI AGENT PROCESSING
+LangGraph coordinates AI agents
+and routes the request.
+
+7. HUMAN APPROVAL
+Manager reviews and approves or rejects
+the request.
+
+8. WORKFLOW AUTOMATION
+n8n triggers the appropriate workflow.
+
+9. NOTIFICATION
+System sends request status notification.
+
+10. DASHBOARD UPDATE
+Dashboard displays updated request status
+and analytics.
+
+EXPECTED RESULT:
+A complete intelligent and automated
+enterprise request processing workflow.

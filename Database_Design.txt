@@ -1,0 +1,122 @@
+
+PROJECT: Enterprise Agentic AI & Intelligent Automation Platform
+
+DATABASE: PostgreSQL
+
+1. USERS TABLE
+
+Purpose:
+Stores employee, manager and administrator details.
+
+Columns:
+- user_id (Primary Key)
+- full_name
+- email
+- password_hash
+- role
+- created_at
+
+2. DOCUMENTS TABLE
+
+Purpose:
+Stores uploaded document information.
+
+Columns:
+- document_id (Primary Key)
+- user_id (Foreign Key)
+- file_name
+- file_type
+- upload_date
+- processing_status
+
+3. REQUESTS TABLE
+
+Purpose:
+Stores employee and business requests.
+
+Columns:
+- request_id (Primary Key)
+- user_id (Foreign Key)
+- request_title
+- request_description
+- request_category
+- request_status
+- created_at
+
+4. AI_AGENTS TABLE
+
+Purpose:
+Stores AI agent information.
+
+Columns:
+- agent_id (Primary Key)
+- agent_name
+- agent_type
+- agent_status
+- created_at
+
+5. TASKS TABLE
+
+Purpose:
+Stores tasks assigned to agents or users.
+
+Columns:
+- task_id (Primary Key)
+- request_id (Foreign Key)
+- agent_id (Foreign Key)
+- assigned_user_id (Foreign Key)
+- task_description
+- task_status
+- created_at
+
+6. APPROVALS TABLE
+
+Purpose:
+Stores manager approval decisions.
+
+Columns:
+- approval_id (Primary Key)
+- request_id (Foreign Key)
+- manager_id (Foreign Key)
+- approval_status
+- comments
+- approved_at
+
+7. NOTIFICATIONS TABLE
+
+Purpose:
+Stores notifications sent to users.
+
+Columns:
+- notification_id (Primary Key)
+- user_id (Foreign Key)
+- message
+- notification_status
+- created_at
+
+8. AUDIT_LOGS TABLE
+
+Purpose:
+Maintains application activity history.
+
+Columns:
+- log_id (Primary Key)
+- user_id (Foreign Key)
+- action
+- activity_description
+- created_at
+
+DATABASE RELATIONSHIPS:
+
+- One user can create multiple requests.
+- One user can upload multiple documents.
+- One request can have multiple tasks.
+- One request can have approval records.
+- One user can receive multiple notifications.
+- One AI agent can process multiple tasks.
+
+EXPECTED RESULT:
+
+A structured relational database to manage
+enterprise users, documents, requests, tasks,
+approvals and AI automation activities.

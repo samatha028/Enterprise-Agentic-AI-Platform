@@ -1,11 +1,15 @@
+
 from fastapi import FastAPI
 
 from backend.routers import users
 from backend.routers import agents
+from backend.routers import workflows
+
 from backend.database import Base, engine
-from backend import models, agent_models
+from backend import models, agent_models, workflow_models
 
 Base.metadata.create_all(bind=engine)
+
 app = FastAPI(
     title="Enterprise Agentic AI Platform",
     description="Enterprise Operations and Intelligent Automation API",
@@ -14,6 +18,7 @@ app = FastAPI(
 
 app.include_router(users.router)
 app.include_router(agents.router)
+app.include_router(workflows.router)
 
 
 @app.get("/")

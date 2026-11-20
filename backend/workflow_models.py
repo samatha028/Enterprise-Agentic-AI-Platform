@@ -3,7 +3,6 @@ from sqlalchemy.sql import func
 
 from backend.database import Base
 
-
 class Workflow(Base):
     __tablename__ = "workflows"
 

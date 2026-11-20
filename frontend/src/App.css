@@ -1,0 +1,297 @@
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f1f5f9;
+}
+
+.dashboard h1 {
+  margin: 0 0 12px;
+  color: #172554;
+  font-size: 30px;
+}
+
+.dashboard p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #172554;
+  color: white;
+  padding: 30px 20px;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.main-content h1 {
+  margin-top: 0;
+  color: #172554;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.card h3 {
+  margin: 0 0 18px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.card h2 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 30px;
+}
+
+@media (max-width: 900px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recent-activity {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.recent-activity h2 {
+  margin: 0 0 15px;
+  color: #172554;
+  font-size: 20px;
+}
+
+.recent-activity p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 13px 15px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background: #334b80;
+  color: white;
+}
+
+.nav-link.active {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .dashboard {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+.agents-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 20px;
+}
+
+.agents-table th,
+.agents-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  overflow-wrap: anywhere;
+}
+
+.agents-table th:nth-child(1),
+.agents-table td:nth-child(1) {
+  width: 6%;
+}
+
+.agents-table th:nth-child(2),
+.agents-table td:nth-child(2) {
+  width: 22%;
+}
+
+.agents-table th:nth-child(3),
+.agents-table td:nth-child(3) {
+  width: 42%;
+}
+
+.agents-table th:nth-child(4),
+.agents-table td:nth-child(4) {
+  width: 15%;
+}
+
+.agents-table th:nth-child(5),
+.agents-table td:nth-child(5) {
+  width: 15%;
+}
+
+.tasks-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin-top: 20px;
+}
+
+.tasks-table th,
+.tasks-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.tasks-table th:nth-child(1),
+.tasks-table td:nth-child(1) {
+  width: 5%;
+}
+
+.tasks-table th:nth-child(2),
+.tasks-table td:nth-child(2) {
+  width: 20%;
+}
+
+.tasks-table th:nth-child(3),
+.tasks-table td:nth-child(3) {
+  width: 25%;
+}
+
+.tasks-table th:nth-child(4),
+.tasks-table td:nth-child(4) {
+  width: 10%;
+}
+
+.tasks-table th:nth-child(5),
+.tasks-table td:nth-child(5) {
+  width: 10%;
+}
+
+.tasks-table th:nth-child(6),
+.tasks-table td:nth-child(6) {
+  width: 12%;
+}
+
+.tasks-table th:nth-child(7),
+.tasks-table td:nth-child(7) {
+  width: 18%;
+}
+.executions-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin-top: 20px;
+}
+
+.executions-table th,
+.executions-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.executions-table th:last-child,
+.executions-table td:last-child {
+  min-width: 150px;
+}
